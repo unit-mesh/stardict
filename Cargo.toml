@@ -1,5 +1,5 @@
 [package]
-name = "stardict"
+name = "stardict-lib"
 version = "0.1.11"
 edition = "2021"
 description = "Rust implement stardict"
@@ -31,3 +31,8 @@ dirs = "5.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 process_alive = "0.1"
+
+[lib]
+name = "stardict-lib"
+path = "src/lib.rs"
+crate-type = ["dylib"]
